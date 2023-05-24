@@ -1,4 +1,12 @@
 body {
+
+  background-image: url("https://www.wereldreizigers.nl/wp-content/uploads/2020/10/Alle-landen-ter-wereld-e1602076568118-2000x1000.jpg.webp");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
