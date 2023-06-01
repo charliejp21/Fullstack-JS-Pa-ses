@@ -1,0 +1,243 @@
+.formActivities{
+	width:70%;
+	padding:1%;
+	border-radius:10px;
+	margin:auto;
+	background-color:#9a1e39bb;
+    box-shadow: 0px 0px 5px 1px #329ddc;
+    margin-top:2%;
+    margin-bottom: 2%;
+}
+
+.formActivities > div > label{
+
+	font-size: 1.6em;
+    color: #9a1e38;
+    box-shadow: 0px 0px 5px 1px #9a1e38;
+    background-color: #329ddc;
+    width: 60%;
+    height: 40px;
+    margin: auto;
+    text-align: center;
+    border-radius: 15px;
+    font-variant-caps:petite-caps ;
+    display: block;
+    font-weight: bold;
+	
+}
+
+.formActivities > div > p{
+
+	font-size: 0.8em;
+    color: #9a1e38;
+    box-shadow: 0px 0px 5px 1px #9a1e38;
+    background-color: #329ddc;
+    width: 50%;
+    height: 20px;
+    margin: auto;
+    text-align: center;
+    border-radius: 15px;
+    font-variant-caps:petite-caps ;
+    display: block;
+    font-weight: bold;
+	
+}
+.formActivities > div > span{
+
+	font-size: 1em;
+    color: #ffffff;
+    box-shadow: 0px 0px 5px 1px #9a1e38;
+    background-color: #ec0033;
+    width:fit-content;
+    padding: 0.3%;
+    height: 20px;
+    margin: auto;
+    text-align: center;
+    border-radius: 2px;
+    font-variant-caps:petite-caps ;
+    display: block;
+    font-weight: bold;
+    margin-top:-2%;
+    margin-bottom: 2%;
+    font-style: oblique;
+	
+}
+
+.formActivities > div > input[type="text"],
+.formActivities > div > input[type="url"]{
+	width: 50%;
+    height: 25px;
+	padding:1%;
+	border:1px solid #329ddc;
+	border-radius:3px;
+	background-color:#370a39a6;
+	margin-top: 2%;
+    margin-bottom: 2%;
+	display:inline-block;
+    color: white;
+}
+
+.formActivities > div > input[type="number"]{
+	width: 20%;
+    height: 25px;
+	padding:1%;
+	border:1px solid #329ddc;
+	border-radius:3px;
+	background-color:#370a39a6;
+	margin-top: 2%;
+    margin-bottom: 2%;
+	display:inline-block;
+    color: white;
+    text-align: center;
+}
+
+.formActivities > div > input[type="submit"]{
+
+	color: #329ddc;
+    font-size: 2em;
+    font-weight:bold;
+    background-color: #9a1e38;
+    border-color: #329ddc;
+    font-family: monospace;
+    font-variant-caps: small-caps;
+    display: flex;
+    margin:auto;
+
+} 
+
+.formActivities > div > input[type="submit"]:hover{
+	cursor:pointer;
+}
+
+
+.countriesSeasons{
+
+    width: 25%;
+    height: 115px;
+    font-size: 0.9em;
+    color: #9a1e38;
+    box-shadow: 0px 0px 5px 1px #9a1e38;
+    background-color: #329ddc;
+    border-radius: 15px;
+    font-variant-caps:petite-caps ;
+    font-weight: bold;
+    margin: auto;
+    padding: 1%;
+}
+
+.seasonCheck{
+
+    display:grid;
+    padding: 0.2%;
+    text-align: left;
+
+}
+
+.countriesList{
+
+    width: 45%;
+    height: 200px;
+    font-size: 0.9em;
+    color: #9a1e38;
+    box-shadow: 0px 0px 5px 1px #9a1e38;
+    background-color: #329ddc;
+    border-radius: 15px;
+    font-variant-caps:petite-caps ;
+    font-weight: bold;
+    margin: auto;
+    padding: 1%;
+    overflow: auto;
+}
+
+.countriesCheck{
+
+    display:flex;
+    padding: 0.2%;
+
+}
+
+.formActivities > .btn90,
+.formActivities > .btn90 *,
+.formActivities > .btn90 :after,
+.formActivities > .btn90 :before,
+.formActivities > .btn90:after,
+.formActivities > .btn90:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.formActivities > .btn90 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #329ddc;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: auto;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.formActivities > .btn90:disabled {
+  cursor: default;
+}
+.formActivities > .btn90:-moz-focusring {
+  outline: auto;
+}
+.formActivities > .btn90 svg {
+  display: block;
+  vertical-align: middle;
+}
+.formActivities > .btn90 [hidden] {
+  display: none;
+}
+.formActivities > .btn90 {
+  --size: 60px;
+  background: none;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  -webkit-mask-image: none;
+  padding: 20px 0;
+  position: relative;
+  text-transform: uppercase;
+}
+.formActivities > .btn90 span {
+  font-weight: 900;
+  mix-blend-mode: difference;
+}
+.formActivities > .btn90 .blobs {
+  filter: url(#goo);
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+.formActivities > .btn90 .blobs:after,
+.formActivities > .btn90 .blobs:before {
+  background: #329ddc;
+  border-radius: 50%;
+  content: "";
+  height: var(--size);
+  pointer-events: none;
+  position: absolute;
+  top: calc(50% - var(--size) / 2);
+  transition: transform 0.8s;
+  width: var(--size);
+}
+.formActivities > .btn90 .blobs:before {
+  left: 100%;
+}
+.formActivities > .btn90 .blobs:after {
+  right: 100%;
+}
+.formActivities > .btn90:hover .blobs:before {
+  transform: translateX(-100%);
+}
+.formActivities > .btn90:hover .blobs:after {
+  transform: translateX(100%);
+}

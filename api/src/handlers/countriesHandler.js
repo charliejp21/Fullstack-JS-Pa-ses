@@ -1,4 +1,4 @@
-const {getAllCountriesDb, getCountryDb} = require('../controllers/getCountriesDb')
+const {getAllCountriesDb, getCountryDb, getCountriesCodes} = require('../controllers/getCountriesDb')
 
 const getCountriesHandler = async(req, res) => {
 
@@ -46,4 +46,37 @@ const getCountryById = async(req, res) =>{
 
 }
 
-module.exports = {getCountriesHandler, getCountryById};
+const getCodes = async(req, res) => {
+
+        try{
+
+            const allCountriesCodes = await getCountriesCodes();
+
+            if(allCountriesCodes.length){
+
+                return res.status(200).send(allCountriesCodes)
+
+            }else{
+
+                return res.status(404).json({
+
+                    status: "error",
+                    mensaje: "No se encontraron países para mostrar",
+        
+                });
+            }
+
+        }catch(error){
+
+
+            return res.status(500).json({
+
+                status: "error",
+                mensaje: "Error del servidor al obtener los códigos del pais",
+    
+              });
+        }
+
+}
+
+module.exports = {getCountriesHandler, getCountryById, getCodes};

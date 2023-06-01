@@ -2,22 +2,20 @@
 .topnav {
     overflow: hidden;
     background-color: #329ddc;
+    height: 50px;
   }
 
   .topnav > p {
 
   margin:auto;
-
+  
  } 
 
  .topnav > p > img {
-
-  height: auto;
-  max-width: 10%;
+  height:50px;
   float: left;
-  display: block;
-  padding: 0.2%;
-  
+  background-color: #9a1e38;
+
  } 
 
   /* Style the links inside the navigation bar */
@@ -28,9 +26,8 @@
     text-align: center;
     padding: 1%;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1.2em;
     margin: auto;
-    box-shadow: 0px 1px 1px 0px #9a1e38;
   }
   
   /* Change the color of links on hover */

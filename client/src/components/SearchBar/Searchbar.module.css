@@ -1,10 +1,9 @@
 .inputSearch{
-
-    float: right;
+    position:absolute;
     padding: 6px;
     border: none;
     margin-top: 8px;
-    margin-right: 16px;
+    margin-left: 10.2%;
     font-size: 17px;
     background-color: #ffffff;
     max-width: 30%;
@@ -12,40 +11,149 @@
     color: #9a1e38;
     font-family: monospace;
     font-variant-caps: small-caps;
-    box-shadow: 0px 0px 5px 1px #508100;
+    box-shadow: 0px 0px 5px 1px #9a1e38;
 
 }
 
-.searchButton{
-
-    float: right;
-    color: #329ddc;
-    font-weight:bold;
-    background-color: #9a1e38;
-    border-color: #329ddc;
-    font-family: monospace;
-    font-variant-caps: small-caps;
-    margin: 0.4%;
-    display: block;
-    text-align: center;
-    padding:0.5%;
-    font-size: 17px;
-    border-radius: 30px;
-
+.btn19,
+.btn19 *,
+.btn19 :after,
+.btn19 :before,
+.btn19:after,
+.btn19:before {
+  border: 0 solid;
+  box-sizing: border-box;
 }
-.searchButton > .link {
-    
-    float: right;
-    color: #329ddc;
-    font-weight:bold;
-    background-color: #9a1e38;
-    border-color: #329ddc;
-    font-family: monospace;
-    font-variant-caps: small-caps;
-    margin: 0.4%;
-    display: block;
-    text-align: center;
-    padding:0.5%;
-    font-size: 17px;
-    border-radius: 30px;
+.btn19 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #9a1e38;
+  background-image: none;
+  color: #9a1e38;
+  cursor: pointer;
+  font-family: monospace;;
+  font-size: 80%;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0;
+  margin-top: 0.3%;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  
+  text-transform: uppercase;
+}
+.btn19:disabled {
+  cursor: default;
+}
+.btn19:-moz-focusring {
+  outline: auto;
+}
+.btn19 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn19 [hidden] {
+  display: none;
+}
+.btn19 {
+  border-radius: 99rem;
+  border-width: 2px;
+  padding: 0.8rem 3rem;
+  z-index: 0;
+}
+.btn-18 .textContainer,
+.btn19 {
+  overflow: hidden;
+  position: relative;
+}
+.btn-18 .text-container {
+  display: block;
+}
+.btn-18 .text {
+  display: block;
+  mix-blend-mode: difference;
+  position: relative;
+}
+.btn-18:hover .text {
+  -webkit-animation: move-up-alternate 0.3s forwards;
+  animation: move-up-alternate 0.3s forwards;
+}
+@-webkit-keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(80%);
+  }
+  51% {
+    transform: translateY(-80%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.btn19 span {
+  mix-blend-mode: difference;
+}
+.btn19 .textContainer {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.btn19 .text {
+  display: block;
+  mix-blend-mode: difference;
+  position: relative;
+}
+.btn19:hover .text {
+  -webkit-animation: move-up-alternate 0.3s forwards;
+  animation: move-up-alternate 0.3s forwards;
+}
+@keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(80%);
+  }
+  51% {
+    transform: translateY(-80%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.btn19:after,
+.btn19:before {
+  background: linear-gradient(
+    90deg,
+    #000000 25%,
+    transparent 0,
+    transparent 50%,
+    #000000 0,
+    #000000 75%,
+    transparent 0
+  );
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: translateY(var(--progress, 100%));
+  transition: transform 0.2s ease;
+}
+.btn19:after {
+  --progress: -100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0,
+    transparent 25%,
+    #000000 0,
+    #000000 50%,
+    transparent 0,
+    transparent 75%,
+    #000000 0
+  );
+  z-index: -1;
+}
+.btn19:hover:after,
+.btn19:hover:before {
+  --progress: 0;
 }

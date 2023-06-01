@@ -9,15 +9,15 @@ const Nav = () => {
 
         <div className={style.topnav}>
 
-            <p><image /></p>
+            <p><img src="https://cdn.pixabay.com/photo/2014/04/03/10/49/united-nations-311419_1280.png" alt="logo" /></p>
 
-            <a href="/recipes">Países</a>
+            <a href="/countries">Países</a>
 
-            <a href="/create">Crear actividad</a>
+            <a href="/crear-actividad">Crear actividad</a>
+
+            <a href="/mis-actividades">Actividades creadas</a>
 
             <a href="/">Regresar a inicio</a>
-
-            <a href="/mis-actividades">Mis actividades</a>
 
             <SearchBar></SearchBar>
 

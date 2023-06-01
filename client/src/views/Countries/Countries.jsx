@@ -1,6 +1,20 @@
+import Countrie from '../../components/Countrie/Countrie' 
 import style from './Countries.module.css'
+import {useEffect} from 'react'
+import {useDispatch, useSelector} from "react-redux";
+import {getAllCountries} from "../../redux/action"
 
-const countriesCotainer = () =>  {
+const CountriesContainer = () =>  {
+
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+
+        dispatch(getAllCountries())
+
+    }, [dispatch])
+
+    const countries = useSelector(state => state.countries.data)
 
     return (
 
@@ -9,11 +23,11 @@ const countriesCotainer = () =>  {
 
             <h2 className={style.subtitle}>Busca, selecciona o crea una nueva actividad</h2>
 
-            {/* <div className={style.recipesSection}>
+            <div className={style.countriesSection}>
 
                 <div className={style.overlay}></div>
 
-                <div className={style.headerContainer}>
+               {/*  <div className={style.headerContainer}>
 
                     <div className={style.selectsContainer}>
 
@@ -115,23 +129,25 @@ const countriesCotainer = () =>  {
 
                     </div>
 
-                </div>
+                </div> */}
 
-                <div className={style.recipesContainer}>
+                <div className={style.countriesContainer}>
                     
-                    {pageView.length ? 
+                    {countries ? 
                     
-                        (pageView.map((recipe) => (
+                        (countries.map((countrie) => (
                             
-                            <Recipe
+                            <Countrie
 
-                                key={recipe.title}
-                                id = {recipe.id}
-                                title = {recipe.title}
-                                summary = {recipe.summary}
-                                healthScore = {recipe.healthScore}
-                                image = {recipe.image}
-                                diets = {recipe.diets}
+                                key={countrie.id}
+                                id={countrie.id}
+                                nombre={countrie.nombre}
+                                continente={countrie.continente}
+                                capital={countrie.capital}
+                                imagen={countrie.imagen}
+                                subregion={countrie.subregion}
+                                area={countrie.area}
+                                poblacion={countrie.poblacion}
                             
                             />
                         
@@ -139,13 +155,13 @@ const countriesCotainer = () =>  {
 
                     ) : (
 
-                        <h2 className={style.subtitle}>Loading...</h2>
+                        <h2 className={style.subtitle}>Cargando países...</h2>
                     
                     )}
 
                 </div>
 
-            </div> */}
+            </div>
         
         
         </>
@@ -154,4 +170,4 @@ const countriesCotainer = () =>  {
 
 }
 
-export default countriesCotainer;
+export default CountriesContainer;

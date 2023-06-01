@@ -1,0 +1,178 @@
+.divCountrie{
+
+    text-align: center;
+    background-color: #370a39a6;
+    padding: 1%;
+    width: 29.5%;
+    box-shadow: 0px 0px 5px 1px #329ddc;
+    border-radius: 20px;
+    font-family: monospace;
+    font-size: 1.3em;
+    margin: 0.5%;
+    contain: content;
+
+}
+.infoCountries{
+    background-color: #329edc7e;
+    box-shadow: 0px 0px 5px 1px #9a1e38;
+    border-radius: 20px;
+    width: 85%;
+    color:#000000;
+    margin: auto;
+} 
+
+.divCountrie h1{
+
+    font-size: 1.8em;
+    font-variant-caps:all-small-caps ;
+}
+
+.divCountrie h2{
+
+    font-size: 1.2em;
+    color: #9a1e38;
+    box-shadow: 0px 0px 5px 1px #329ddc;
+    width: 60%;
+    margin: auto;
+    border-radius: 10px;
+    font-variant-caps:petite-caps ;
+}
+
+.divCountrie h3{
+
+    font-size: 1em;
+    font-variant-caps:petite-caps;
+    text-align: center;
+}
+
+.divCountrie > p{
+
+    font-size: 0.8em;
+
+}
+
+.divCountrie > a{
+
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight:bold;
+    padding: 0;
+}
+
+.divCountrie > img{
+
+    width:100%;
+    height: 30%;
+    margin: auto;
+    box-shadow: 0px 0px 5px 1px #329ddc;
+    border-radius:8px;
+    
+}
+
+.divCountrie > .ulclass{
+
+    margin: auto;
+    text-align: center;
+}
+
+.divCountrie > ul > li{
+
+    font-size: 1em;
+    font-variant-caps:petite-caps;
+    list-style: none;
+    color: #9a1e38;
+    text-align: center;
+    background-color:#370a39;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-left: 15%;
+
+}
+
+
+.divCountrie > .btn90,
+.divCountrie > .btn90 *,
+.divCountrie > .btn90 :after,
+.divCountrie > .btn90 :before,
+.divCountrie > .btn90:after,
+.divCountrie > .btn90:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.divCountrie > .btn90 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #ffffff;
+  background-image: none;
+  color: #329ddc;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 80%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: auto;
+  -webkit-mask-image: -webkit-radial-gradient(#ffffff, #fff);
+  padding: 0;
+}
+.divCountrie > .btn90:disabled {
+  cursor: default;
+}
+.divCountrie > .btn90:-moz-focusring {
+  outline: auto;
+}
+.divCountrie > .btn90 svg {
+  display: block;
+  vertical-align: middle;
+}
+.divCountrie > .btn90 [hidden] {
+  display: none;
+}
+.divCountrie > .btn90 {
+  --size: 60px;
+  background: none;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  -webkit-mask-image: none;
+  padding: 20px 0;
+  position: relative;
+  text-transform: uppercase;
+}
+.divCountrie > .btn90 span {
+  font-weight: 900;
+  mix-blend-mode: difference;
+}
+.divCountrie > .btn90 .blobs {
+  filter: url(#goo);
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+.divCountrie > .btn90 .blobs:after,
+.divCountrie > .btn90 .blobs:before {
+  background: #9a1e38;
+  border-radius: 50%;
+  content: "";
+  height: var(--size);
+  pointer-events: none;
+  position: absolute;
+  top: calc(50% - var(--size) / 2);
+  transition: transform 0.8s;
+  width: var(--size);
+}
+.divCountrie > .btn90 .blobs:before {
+  left: 100%;
+}
+.divCountrie > .btn90 .blobs:after {
+  right: 100%;
+}
+.divCountrie > .btn90:hover .blobs:before {
+  transform: translateX(-100%);
+}
+.divCountrie > .btn90:hover .blobs:after {
+  transform: translateX(100%);
+}

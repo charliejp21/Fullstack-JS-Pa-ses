@@ -64,26 +64,97 @@
 
 }
 
-.mainContainer button{
-
-    color: #329ddc;
-    font-size: 2em;
-    font-weight:bold;
-    background-color: #9a1e38;
-    border-color: #329ddc;
-    font-family: monospace;
-    font-variant-caps: small-caps;
-    display: flex;
-    margin:auto;
-    
-}
-
 a{
 
     display: block;
-    color: #329ddc;
     text-align: center;
     text-decoration: none;
     font-weight:bold;
     padding: 0;
+    color: white;
+}
+
+.mainContainer > .btn90,
+.mainContainer > .btn90 *,
+.mainContainer > .btn90 :after,
+.mainContainer > .btn90 :before,
+.mainContainer > .btn90:after,
+.mainContainer > .btn90:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.mainContainer > .btn90 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #329ddc;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: auto;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.mainContainer > .btn90:disabled {
+  cursor: default;
+}
+.mainContainer > .btn90:-moz-focusring {
+  outline: auto;
+}
+.mainContainer > .btn90 svg {
+  display: block;
+  vertical-align: middle;
+}
+.mainContainer > .btn90 [hidden] {
+  display: none;
+}
+.mainContainer > .btn90 {
+  --size: 60px;
+  background: none;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  -webkit-mask-image: none;
+  padding: 20px 0;
+  position: relative;
+  text-transform: uppercase;
+}
+.mainContainer > .btn90 span {
+  font-weight: 900;
+  mix-blend-mode: difference;
+}
+.mainContainer > .btn90 .blobs {
+  filter: url(#goo);
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+.mainContainer > .btn90 .blobs:after,
+.mainContainer > .btn90 .blobs:before {
+  background: #9a1e38;
+  border-radius: 50%;
+  content: "";
+  height: var(--size);
+  pointer-events: none;
+  position: absolute;
+  top: calc(50% - var(--size) / 2);
+  transition: transform 0.8s;
+  width: var(--size);
+}
+.mainContainer > .btn90 .blobs:before {
+  left: 100%;
+}
+.mainContainer > .btn90 .blobs:after {
+  right: 100%;
+}
+.mainContainer > .btn90:hover .blobs:before {
+  transform: translateX(-100%);
+}
+.mainContainer > .btn90:hover .blobs:after {
+  transform: translateX(100%);
 }

@@ -77,4 +77,24 @@ const getAllCountriesDb = async(id) => {
     }
 }
 
-module.exports = {getAllCountriesDb, getCountryDb};
+const getCountriesCodes = async() => {
+
+  const allCountriesCodes = await Country.findAll({
+
+    attributes: ["id", "nombre"],
+
+    include: {
+
+      model: Activity,
+      attributes: ["id", "nombre"],
+      through: null // Establecer 'through' como null para evitar la inclusión de la relación completa
+
+    }
+
+  })
+
+  return allCountriesCodes;
+  
+}
+
+module.exports = {getAllCountriesDb, getCountryDb,getCountriesCodes};
