@@ -1,0 +1,83 @@
+.divResultsContainer > .titulo {
+
+    text-align: center;
+    background-color: #329ddc !important;
+    padding: 1%;
+    box-shadow: 0px 0px 5px 1px #9a1e38;
+    border-radius: 20px;
+    color: #9a1e38;
+    font-family: monospace;
+    font-variant-caps: small-caps;
+    font-size: 3.5em;
+    margin: auto;
+    margin-top: 1%;
+    width: 80%;
+    margin-bottom: 2%;
+    
+}
+
+.divResultsContainer > .activityContainers {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+	align-items: center;
+
+}
+.divResultsContainer > .activityContainers > .activitiesContainers{
+
+    background-color: #9a1e39de;
+    padding: 2.5%;
+    box-shadow: 0px 0px 5px 1px #329ddc;
+    border-radius: 20px;
+    margin: auto;
+    margin: 0.5%;
+    margin-top:3%;
+    width: 18%;
+    margin: auto;
+    margin-bottom: 2%;
+    font-family: monospace;
+    font-variant-caps: small-caps;
+
+}
+
+.activitiesContainers h1{
+    font-size: 2.5em;
+    color: #329ddc;
+    margin: 0%;
+
+}
+
+.activitiesContainers h2{
+    font-size: 2em;
+    color: #329ddc;
+    margin: 0%;
+
+}
+
+.activitiesContainers h4{
+
+    font-size: 2em;
+    color: #ffffff;
+}
+
+.activitiesContainers h3{
+
+    font-size: 2em;
+    color: #329ddc;
+    margin: 0%;
+}
+
+
+.h1Search{
+    font-size: 3.5em;
+    font-variant-caps:all-small-caps;
+    background-color: #9a1e39de;
+    padding: 2.5%;
+    width: 80%;
+    box-shadow: 0px 0px 5px 1px #329ddc;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    margin: auto;
+    margin-top:10%;
+}

@@ -1,5 +1,6 @@
 import './App.css';
 import Inicio from './views/Inicio/Inicio';
+import AvtivitiesContainer from "./views/Actividades/ActividadesCreadas"
 import Countries from './views/Countries/Countries'
 import CountrieView from './views/Countrie/Countrie';
 import CreateActivity from './views/CrearActividad/CrearActividad';
@@ -28,6 +29,8 @@ function App() {
           <Route path='/results/:nombre' element={<Results />}/>
 
           <Route path="/crear-actividad/" element={<CreateActivity />}/>
+
+          <Route path='/mis-actividades' element={<AvtivitiesContainer />} />
 
        </Routes>
         

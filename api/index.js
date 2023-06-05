@@ -22,7 +22,7 @@ const { conn } = require('./src/db.js');
 const {postCountries} = require('./src/controllers/postCountries.js')
 
 // Syncing all the models at once.
-conn.sync({ force: true }).then( async() => {
+conn.sync({ force: false }).then( async() => {
 
   await postCountries();
   

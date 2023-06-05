@@ -4,6 +4,7 @@ import {useDispatch, useSelector} from 'react-redux';
 import {useParams} from "react-router-dom";
 import Countrie from "../../components/Countrie/Countrie";
 import {getCountriesByName} from '../../redux/action'
+import wait from '../../images/loading-12.gif'
 
 const ResultsCotainer = () => {
 
@@ -34,7 +35,7 @@ const ResultsCotainer = () => {
     return(
 
         <div>
-            {loading ?  (<h1 className={style.h1Search}>Buscando...</h1>)
+            {loading ?  (<h1 className={style.h1Search}>Buscando...<br/><img src={wait} alt="waiting" height= '130px'/></h1>)
             
             :  countries.length > 0 ? (<>
             

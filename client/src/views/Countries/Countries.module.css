@@ -17,13 +17,31 @@
 
 .subtitle{
 
-    font-size: 2.5em;
+    font-size: 2em;
     font-variant-caps:all-small-caps;
     background-color: #9a1e39bb;
     padding: 0.6%;
     width: 45%;
     box-shadow: 0px 0px 5px 1px #329ddc;
     border-radius: 20px;
+    color: #329ddc;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 2%;
+	font-family: monospace;
+	font-variant-caps:all-small-caps;
+
+}
+
+.subtitleImg{
+
+    font-size: 2em;
+    font-variant-caps:all-small-caps;
+    background-color: #9a1e392d;
+    padding: 2%;
+    width: 15%;
+    box-shadow: 0px 0px 5px 1px #329ddc;
+    border-radius: 300px;
     color: #329ddc;
     margin: auto;
     margin-top: 1%;
@@ -143,6 +161,7 @@
 	border-radius: 100px;
 	padding: 5px 5px;
 	position: relative;
+	width: auto;
 }
 
 .btn {
@@ -158,17 +177,18 @@
 	background-color: #329ddc;
 	border-radius: 100px;
 	transition: all 0.2s ease-in-out;
-	margin-left: 5px;
+	margin: 0.1%;
 }
 
 .btn:hover {
-	background-color: rgba(255, 217, 0, 0.562);
+	background-color: #9a1e38;
+	color: white;
 	transform: scale(95%);
 }
 
 .btn.btnPage {
-	background-color: #329ddc;
-	color:#9a1e38;
+	background-color: #1c79af;
+	color:#ffffff;
 }
 
 .overlay {
