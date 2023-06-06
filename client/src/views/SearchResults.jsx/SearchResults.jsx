@@ -39,7 +39,7 @@ const ResultsCotainer = () => {
             
             :  countries.length > 0 ? (<>
             
-                <h2 className={style.titulo}>Se muestran los siguientes resultados:</h2>
+                <h2 className={style.titulo}>Se muestran los siguientes resultados para: <br/>{nombre}</h2>
                 
                     <div className={style.divResultsContainer}> 
                     

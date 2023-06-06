@@ -78,13 +78,19 @@ export const getActivities = () => async(dispatch) => {
 
 export const postActivity = async(info) => {
 
-    console.log(info)
-
     const postDataDb = await axios.post(`http://localhost:3001/activities`, info)
 
     return postDataDb.data;
 
 }
+
+export const deleteActivity = async(id) => {
+
+    const deleteDataDb = await axios.delete(`http://localhost:3001/activities/${id}`);
+
+    return deleteDataDb.data;
+
+};
 
 export const getPage = (pages) => async(dispatch) => {
 

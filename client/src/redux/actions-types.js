@@ -7,3 +7,4 @@ export const SORT = "SORT";
 export const GET_PAGE = "GET_PAGE";
 export const FILTER_ACTIVITY = "FILTER_ACTIVITY";
 export const FILTER_CONTINENT = "FILTER_CONTINENT"
+export const POST_ACTIVITY_SUCCESS = "POST_ACTIVITY_SUCCESS"

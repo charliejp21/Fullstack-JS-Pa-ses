@@ -1,4 +1,4 @@
-const {getAllActivities, createActivity} = require('../controllers/activitiesController')
+const {getAllActivities, createActivity, deleteActivityDb} = require('../controllers/activitiesController')
 
 const getActivitiesHandler = async(req, res) => {
 
@@ -43,4 +43,43 @@ const postActivitiesHandler = async(req, res) => {
 
 }
 
-module.exports = {getActivitiesHandler, postActivitiesHandler}
+const deleteActHandler = async(req, res) => {
+
+    const {id} = req.params;
+
+    try {
+
+        const borrar = await deleteActivityDb(id);
+
+        if(borrar){
+
+            return res.status(200).send({
+
+                status: "success",
+                actividad: borrar,
+                mensaje: "Actividad borrada exitosamente" 
+
+            })
+        }
+        
+    } catch (error) {
+
+        return res.status(404).send({
+
+            status: "error",
+            mensaje: "No se encontró la actividad con el id proporcionado"
+
+        })
+        
+    }
+
+    return res.status(500).json({
+
+        status: "error",
+        mensaje: "Error del servidor al buscar"
+
+    })
+
+}
+
+module.exports = {getActivitiesHandler, postActivitiesHandler, deleteActHandler}

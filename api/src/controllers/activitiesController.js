@@ -28,6 +28,23 @@ const createActivity = async(nombre, dificultad, duracion, temporada, paises) =>
 
     return activity;
 
-}  
+}
 
-module.exports = {getAllActivities, createActivity};
+const deleteActivityDb = async(id) => {
+
+    if(id){
+
+        return await Activity.destroy({
+
+            where: {
+    
+                id: id
+    
+            }
+        })
+
+    }
+
+}
+
+module.exports = {getAllActivities, createActivity, deleteActivityDb};

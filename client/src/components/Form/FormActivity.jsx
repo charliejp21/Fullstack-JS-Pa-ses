@@ -108,8 +108,6 @@ const Form = () => {
     
         } catch (error) {
 
-            console.error(error);
-
             alert("Error al crear la actividad");
         }
         
