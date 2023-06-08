@@ -10,6 +10,8 @@ const Form = () => {
     
     const countries = useSelector(state => state.countries.codes)
 
+    const [selectedCountries, setSelectedCountries] = useState([]);
+
     useEffect(() => {
 
         if(!countries.length){
@@ -112,7 +114,6 @@ const Form = () => {
         }
         
     };
-      
 
     return(<>
 
@@ -201,7 +202,7 @@ const Form = () => {
                        
                 </div><br/>
 
-                    {form.nombre !== '' && form.dificultad !== '' && form.duracion !== ''  && form.temporada !== '' ? (
+                    {form.nombre !== '' && form.dificultad !== '' && form.duracion !== ''  && form.temporada !== '' && form.paises.length !==0 ? (
 
                             <button type="submit" className={style.btn90}>
                             <div className={style.blobs}></div>
